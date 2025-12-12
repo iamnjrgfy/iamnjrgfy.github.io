@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>店家評論平台</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 24px 28px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        .hint {
+            font-size: 12px;
+            color: #777;
+            margin-top: 4px;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0065d1;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>店家評論</h1>
+    <p class="subtitle">分享你的體驗，幫助更多人找到好店家！</p>
+
+    <form>
+        <div class="form-group">
+            <label for="userName">你的名字：</label>
+            <input type="text" id="userName" name="userName" placeholder="請輸入你的名字或暱稱">
+        </div>
+
+        <div class="form-group">
+            <label for="rating">給店家的評分（1 ~ 5 星）：</label>
+            <select id="rating" name="rating">
+                <option value="">請選擇評分</option>
+                <option value="1">★☆☆☆☆　1 星</option>
+                <option value="2">★★☆☆☆　2 星</option>
+                <option value="3">★★★☆☆　3 星</option>
+                <option value="4">★★★★☆　4 星</option>
+                <option value="5">★★★★★　5 星</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="comment">請描述你對店家的評價：</label>
+            <textarea id="comment" name="comment" placeholder="例：店員服務態度很好，餐點上菜速度快，環境也很乾淨……"></textarea>
+        </div>
+
+      
+        <div class="form-group">
+            <label for="reason">你為什麼會使用這個評論平台？</label>
+            <textarea id="reason" name="reason" placeholder="例：想分享自己的用餐體驗、幫助其他人選擇餐廳、讓好店家被更多人看見……"></textarea>
+            <div class="hint">說明你使用這個平台的原因，例如：分享經驗、查看別人的評價、支持在地店家等等。</div>
+        </div>
+
+        <button type="submit" class="btn-primary">送出評論</button>
+    </form>
+
+    <div class="footer-text">
+        你的每一則評論，都是幫助下一位顧客的關鍵參考 ❤️
+    </div>
+</div>
+
+</body>
+</html>
